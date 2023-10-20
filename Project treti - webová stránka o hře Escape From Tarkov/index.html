@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fanouškovská stránka o hře - Escape From Tarkov</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap"
+    rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="querry.css" />
+  <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/tarkov mini logo.jpg" alt="logo-escape-from-tarkov" />
+      <span class="date--time" id="datetime"></span>
+    </div>
+    <div class="hamburger" id="menu" onclick="myFunction(this)">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav class="nav-bar" id="list-menu">
+      <ul>
+        <li>
+          <a href="#about">Welcome</a>
+        </li>
+        <li>
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+          <a href="#woods">Woods</a>
+        </li>
+        <li>
+          <a href="#clips">Clips</a>
+        </li>
+        <li>
+          <a href="#ZB-014">ZB-014</a>
+        </li>
+        <li>
+          <a href="#myPmc">My PMCs</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="switcher">
+    <i class="indicator"></i>
+  </div>
+  <!-- <span class="date--time" id="datetime"></span> -->
+  <section class="main">
+    <section class="about" id="about">
+      <div class="about--wrapper">
+        <h1>Vítejte na stránkách o hře Escape From Tarkov</h1>
+        <p>Escape from Tarkov je hardcore realistická online střílečka s RPG a MMO prvky vyvíjena Ruským
+          Saint-Petersburgským vývojářem, Battlestate Games. Hra je postavena na fiktivním Norvinském regionu
+          nacházejícím
+          se na hranicích mezi Ruskem a Evropou, ale metropole Tarkova byla ponořena do anarchie kvůli kontraktním
+          válkám.
+          To, co tu bylo dříve rušným městem, je nyní obklopeno gangama scavů, bývalými soukromými vojenskými
+          jednotkami,
+          a black ops jednotkami. Mezi tímto vším, jste vy, vaše skrýš, a útěk zpět do svobodného světa z hlubin
+          Tarkova.
+        </p>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <div class="gallery--wrapper">
+        <img class="gallery-image" src="/img/4cdcae598f4907ee_original.webp" alt="">
+        <img class="gallery-image" src="/img/escape-from-tarkov-rogue-boss-knight.webp" alt="">
+        <img class="gallery-image" src="/img/3662cc462d792ab0b595d5d694959084.jpg" alt="">
+      </div>
+    </section>
+    <section class="woods" id="woods">
+      <div class="woods--wrapper">
+        <h1>Woods</h1>
+        <p>Má nejoblíbenější mapa ve hře je zalesněná část herní oblasti Tarkova s názvem WOODS. Woods je lokace v
+          Escape from Tarkov. Je to třetí oblast, která byla přidána do hry. Přírodní rezervace Priozersk byla nedávno
+          zahrnuta do seznamu státem chráněných přírodní rezervací severozápadního okresu. Středně velká část lesů s
+          několika otevřenými poli, malými kopci, těžařským táborem a bunkry ZB-014 a ZB-016. <br>
+          Na této mapě se mohou spawnout také bossové: Shturman, Big Pipe, Birdeye a Knight. Pokud jako hráč potkáte
+          některého z bossů, tak s velkou pravděpodobností umřete. Bossové jsou součástí hry a jsou neuvěřitelně přesní
+          a mají strašně moc HP (života). Mají také prvotřídní vybavení a brnění. Do toho všeho disponují nelidskou
+          přesností a pokud zaměří svůj cíl, tak stačí dvě až tři kulky a jste mrtev... <br>
+        </p>
+        <div class="video--wrapper">
+          <video src="/mov/clideo slowmo-kratsi-vytvoreno-pomoci-aplikace-clipchamp_Kn6KZzPz.mp4" loop muted></video>
+        </div>
+        <p>Tato mapa je veliká, není zde taková frekvence střetnutí se s dalšími hráči a vyskystuje se zde hodně
+          lootu.
+          Můj nejoblíbenější exit z mapy je v bunkru ZB-014. <br><br><span class="instructions--bold"> <a href="#ZB-014"
+              class="instructions--bold__link">Do tohoto bunkru
+              se
+              pokusíme vstoupit v jedné z
+              následujících
+              sekcí
+              zadáním
+              hesla... <br> (vložte Vámi vymyšlené heslo v rozmezí 5 - 10 znaků). Good luck!!!</a></span> </p>
+      </div>
+    </section>
+    <section class="clips" id="clips">
+      <div class="clip--wrapper">
+        <video id="myVideoFirst"
+          src="/mov/clideo kopie-some-kills-mensi-verze-vytvoreno-pomoci-aplikace-clipchamp_GyDsAZfq.mp4" loop
+          muted></video>
+        <p>Zde jsou vybrané situace z reálného hraní online na mapě Woods. Je zde vidět oblast lokace bunkru ZB-014,
+          odstřelování
+          extraktu s autem, taktické killy bez odhalení mé pozice a samozřejmě několik soubojů bez taktiky... Have Fun!
+        </p>
+      </div>
+      <div class="mute--buttons">
+        <button onclick="disableMute()" type="button"><svg class="icon--unmute">
+            <use xlink:href="./svg/mute.svg#icon--mute"></use>
+          </svg></button>
+        <button onclick="enableMute()" type="button"><svg class="icon--mute">
+            <use xlink:href="./svg/unmute.svg#icon--unmute"></use>
+          </svg></button>
+      </div>
+      <div class="clip--wrapper">
+        <video id="myVideoSecond" src="/mov/clideo hideout-vytvoreno-pomoci-aplikace-clipchamp_aJ64U7By.mp4" loop
+          muted></video>
+        <p>Na tomto videu můžete vidět jak vypadá přehled postavy, inventář, dále úkryt neboli hideout a jeho vybaní -
+          posilovna, střelnice, workbench na výrobu munice a mnoho dalšího pro zlepšení herního zážitku s postavou.
+          Radost upgradovat!</p>
+      </div>
+    </section>
+    <section class="zb14--wrapper" id="ZB-014">
+      <section class="form">
+        <h1>ZB-014 - ACCESS PANEL</h1>
+        <form class="form--window">
+          <input type="text" class="fullName" placeholder="nickname"><br>
+          <input type="email" class="email" placeholder="@" required><br>
+          <input type="password" class="password password1" placeholder="Create code 5-10 symbols" pattern=".{5,10}"
+            required><br>
+          <input type="password" class="password password2" placeholder="Confirm code" pattern=".{5,10}" required><br>
+          <input type="submit" value="ENTER">
+          <p class="notificationName">Vyplňte prosím přezdívku!</p>
+          <p class="notificationMailWrong">Vyplňte prosím email ve správném tvaru!</p>
+          <p class="passwordNotMatch">Heslo nesouhlasí. Vložte ho prosím znovu...</p>
+        </form>
+      </section>
+      <p class="passwordMatch">ACCESS GRANTED!!!<br>You may enter bunker ZB-014...</p>
+      <div class="vault--animation">
+        <video src="/mov/vault392968344_6724741524282060_1730946986245160998_n.mp4"=""></video>
+      </div>
+    </section>
+    <section class="bio" id="myPmc">
+      <img src="/img/pmc11.jpg" alt="">
+      <img src="/img/pmc22.jpg" alt="">
+      <img src="/img/pmc33.jpg" alt="">
+    </section>
+    <footer>
+      <div class="footer--logo--section">
+        <div class="footer--icon--container"><svg class="icon--JD">
+            <use xlink:href="./svg/JD.svg#icon--JD"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="social--sites">
+        <a href="https://instagram.com/jacob.4.fun?igshid=MzMyNGUyNmU2YQ==" target="_blank"><svg
+            class="icon--instagram">
+            <use xlink:href="./svg/instagram.svg#icon--instagram"></use>
+          </svg></a>
+        <a href="https://www.facebook.com/jakub.divis.927/" target="_blank"><svg class="icon--facebook">
+            <use xlink:href="./svg/facebook.svg#icon--facebook"></use>
+          </svg></a>
+        <a href="https://www.twitch.tv/directory/category/escape-from-tarkov" target="_blank"><svg class="icon--twitch">
+            <use xlink:href="./svg/twitch.svg#icon--twitch"></use>
+          </svg></a>
+        <a href="https://twitter.com/tarkov?lang=cs" target="_blank"><svg class="icon--twitter">
+            <use xlink:href="./svg/twitter.svg#icon--twitter"></use>
+          </svg></a>
+        <a href="mailto:eclips33@seznam.cz"><svg class="icon--mail">
+            <use xlink:href="./svg/mail.svg#icon--mail"></use>
+          </svg></a>
+        <a href="https://www.youtube.com/@Battlestategames" target="_blank"><svg class="icon--youtube">
+            <use xlink:href="./svg/youtube.svg#icon--youtube"></use>
+          </svg></a>
+        <a href="https://discord.com/servers/ueft-community-146573551246245888" target="_blank"><svg
+            class="icon--discord">
+            <use xlink:href="./svg/discord.svg#icon--discord"></use>
+          </svg></a>
+
+      </div>
+      <p>JACOB Studio <br> ©2023 </p>
+    </footer>
+    <div class="btn-up">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="btn-up-image">
+        <path fill-rule="evenodd"
+          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm.53 5.47a.75.75 0 00-1.06 0l-3 3a.75.75 0 101.06 1.06l1.72-1.72v5.69a.75.75 0 001.5 0v-5.69l1.72 1.72a.75.75 0 101.06-1.06l-3-3z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+  </section class="main">
+  <script src="script.js"></script>
+</body>
+
+</html>

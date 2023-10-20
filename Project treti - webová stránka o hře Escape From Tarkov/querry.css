@@ -1,0 +1,281 @@
+@media only screen and (max-width: 1487px) {
+  .bio img:nth-child(2) {
+    border-radius: 0 15px 15px 0;
+  }
+
+  .bio img:nth-child(3) {
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .clip--wrapper video:hover {
+    scale: 1.05;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .clips {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  .clip--wrapper {
+    margin: 2rem 0 0 0;
+  }
+
+  .clip--wrapper video:hover {
+    scale: 1.1;
+  }
+
+  .mute--buttons {
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+
+  .clip--wrapper video {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1364px) {
+  .gallery--wrapper {
+    flex-wrap: wrap;
+    width: 84%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .vault--animation {
+    width: 80%;
+  }
+
+  .vault--animation video {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  header {
+    padding: 0 30px;
+  }
+
+  .nav-bar ul li a {
+    padding: 0 10px;
+  }
+
+  .gallery--wrapper {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1115px) {
+  .nav-bar ul li a {
+    padding: 0 10px;
+  }
+
+  .gallery--wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .gallery--wrapper {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .gallery img {
+    width: 590px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 997px) {
+  .bio img:nth-child(1) {
+    border-radius: 15px;
+  }
+
+  .bio img:nth-child(2) {
+    border-radius: 15px;
+  }
+
+  .bio img:nth-child(3) {
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (max-width: 921px) {
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  /* Rotace první příčky */
+  .hamburger.change .bar:nth-child(1) {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  /* Zmizení druhé příčky */
+  .hamburger.change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  /* Rotace třetí příčky */
+  .hamburger.change .bar:nth-child(3) {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    /* width: 100vw; */
+    background: #10121bde;
+    transition: 0.5s;
+    overflow: hidden;
+    /* opacity: 0.85; */
+  }
+
+  .nav-bar.active {
+    height: 562px;
+  }
+
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    /* width: 230px; */
+    margin: 100px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    /* opacity: 0; */
+  }
+
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+    padding: 10px 25px;
+  }
+}
+
+@media only screen and (max-width: 896px) {
+  .gallery img {
+    width: 570px;
+    height: 320px;
+  }
+
+  .gallery img:hover {
+    scale: 1.1;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .gallery img {
+    width: 490px;
+    height: 280px;
+  }
+
+  .gallery img:hover {
+    scale: 1.1;
+  }
+
+  .passwordMatch {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .clip--wrapper {
+    width: 80%;
+  }
+
+  .clip--wrapper video {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .gallery img {
+    width: 440px;
+    height: 240px;
+  }
+
+  .gallery img:hover {
+    scale: 1.1;
+  }
+
+  .video--wrapper video {
+    height: 200px;
+    width: 500px;
+  }
+
+  .form h1 {
+    font-size: 36px;
+  }
+
+  .form--window input {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 586px) {
+  .gallery img {
+    width: 350px;
+    height: 190px;
+  }
+
+  .gallery img:hover {
+    scale: 1.1;
+  }
+
+  .form--window input {
+    width: 80%;
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .bio img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 474px) {
+  .gallery img {
+    width: 300px;
+    height: 170px;
+  }
+
+  .gallery img:hover {
+    scale: 1.1;
+  }
+}
+
+@media only screen and (max-width: 418px) {
+  .video--wrapper video {
+    height: 140px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .gallery img:hover {
+    scale: 1.0;
+  }
+}
